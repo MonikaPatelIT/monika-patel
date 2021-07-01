@@ -24,6 +24,13 @@
   font-size: 36px;
 }
 
+.about-me {
+  background-image: url("../../static/IMG_0924.JPG");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .Red {
   background-color: #f5e2e2;
 }

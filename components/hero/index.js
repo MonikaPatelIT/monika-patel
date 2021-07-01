@@ -1,9 +1,13 @@
 import styles from "./hero.module.css";
-const Hero = ({ content, theme }) => {
+const Hero = ({ content }) => {
   return (
-    <div className={`${styles.grid} ${styles[theme]}`}>
-      <div className={styles.image}>Image</div>
-      <div className={styles.content}>Hello </div>
+    <div className={styles.grid}>
+      <div className={`${styles.image} ${styles[content.id]}`}></div>
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: content.content }}
+      >
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/hero";
+import data from "../data/pages";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,12 +14,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Hero content='About me' theme="Red" />
-        <Hero content='Work 3' theme="Blue" />
-        <Hero content='Work 2' theme="Green" />
-        <Hero content='Work 1' theme="Yellow" />
-        <Hero content='Education' theme="Violate" />
-        
+        {data &&
+          data
+            .sort(({ order: a }, { order: b }) => a - b)
+            .map((box) => <Hero content={box} />)}
       </main>
     </div>
   );
