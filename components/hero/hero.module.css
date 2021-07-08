@@ -16,14 +16,26 @@
   font-size: 36px;
 }
 .content {
-  background-color: rgb(240, 240, 240);
+  background-color: #fff;
   grid-area: 5 / 8 / 10 / 12;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 36px;
+  color: #474545;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: auto;
 }
-
+.content > div {
+  padding: 0.8em;
+  margin: auto;
+}
+.content p {
+  font-size: 18px;
+}
+.content a {
+  text-decoration: underline;
+}
 .about-me {
   background-image: url("../../static/IMG_0924.JPG");
 
