@@ -17,7 +17,7 @@ export default function Home() {
         {data &&
           data
             .sort(({ order: a }, { order: b }) => a - b)
-            .map((box) => <Hero content={box} />)}
+            .map((box, index) => <Hero content={box} key={index} />)}
       </main>
     </div>
   );
