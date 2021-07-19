@@ -37,7 +37,7 @@
   text-decoration: underline;
 }
 .about-me {
-  background-image: url("../../static/IMG_0924.JPG");
+  background-image: url("../../static/lg.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -54,4 +54,29 @@
 }
 .Green {
   background-color: #e0f7ef;
+}
+
+@media only screen and (min-width: 341px) and (max-width: 767px) {
+  .image {
+    grid-area: 1 / 1 / 13 / 13;
+  }
+  .content {
+    grid-area: 10 / 3 / 13 / 11;
+    font-size: 24px;
+    margin: 0;
+  }
+  .content > div {
+    padding: 0.4em;
+  }
+  .content p {
+    font-size: 16px;
+  }
+
+  .about-me{
+    background-image: url("../../static/md.jpg");
+  }
+}
+
+@media (min-width:320px) {
+
 }
